@@ -9,6 +9,7 @@
     <meta name="keywords" content="">
     <meta name="author" content="Dehondt matthieu">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.2.3/foundation.min.css">
+    <link rel="stylesheet" href="css/custom.css">
     <title></title>
   </head>
 
@@ -19,7 +20,7 @@
     <header>
       <!--  -->
       <h1>Cheat Sheet emmet</h1>
-      <nav>
+      <nav class="menu">
         <a href="#child">child</a>
         <a href="#multiplication">Multiplication</a>
         <a href="#html">Html</a>
@@ -35,137 +36,199 @@
 
 
   <!--sectin  -->
-    <section>
+    <section class="row">
       <!--  -->
-      <article>
-        <h2>Child</h2>
-        <h3>Symbole: &gt;</h3>
-        <pre>
-          nav&gt;a
+      <div class="small-12 medium-6 column">
+        <article>
+          <ul class="accordion" data-accordion data-multi-expand="true">
+            <li class="accordion-item is-active" data-accordion-active>
+              <a href="#" class="accordion-title">Child</a>
+              <div class="accordion-content" data-tab-content>
+                <h3>Symbole: &gt;</h3>
+                <pre>
+                  nav&gt;a
 
 
-          &lt;nav&gt;
-            &lt;a&gt;
-          &lt;nav&gt;
-        </pre>
-      </article>
+                  &lt;nav&gt;
+                    &lt;a&gt;
+                  &lt;nav&gt;
+                </pre>
+              </div>
+            </li>
+          </ul>
+        </article>
 
 
-      <article>
-        <h2>Multiplication</h2>
-        <h3>Symbole: *</h3>
-        <pre>
-          ul&gt;li*5
+        <article>
+          <ul class="accordion" data-accordion data-multi-expand="true">
+            <li class="accordion-item" data-accordion-active>
+              <a href="#" class="accordion-title">Multiplication</a>
+                <div class="accordion-content" data-tab-content>
+                  <h3>Symbole: *</h3>
+                  <pre>
+                    ul&gt;li*5
 
 
-          &lt;ul&gt;
-            &lt;li&gt;
-            &lt;li&gt;
-            &lt;li&gt;
-            &lt;li&gt;
-            &lt;li&gt;
-          &lt;ul&gt;
-        </pre>
-      </article>
+                    &lt;ul&gt;
+                      &lt;li&gt;
+                      &lt;li&gt;
+                      &lt;li&gt;
+                      &lt;li&gt;
+                      &lt;li&gt;
+                    &lt;ul&gt;
+                  </pre>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </article>
 
 
-      <article>
-        <h2>Html</h2>
-        <h3>Symbole: balise name</h3>
-        <pre>
-          a (then tab)
-          &lt;a href="#"&gt;&lt;/a&gt;
+        <article>
+          <ul class="accordion" data-accordion data-multi-expand="true">
+            <li class="accordion-item" data-accordion-active>
+              <a href="#" class="accordion-title">Html</a>
+                <div class="accordion-content" data-tab-content>
+                  <h3>Symbole: balise name</h3>
+                  <pre>
+                    a (then tab)
+                    &lt;a href="#"&gt;&lt;/a&gt;
 
 
-          img
-          &lt;img src="" alt=""&gt;
+                    img
+                    &lt;img src="" alt=""&gt;
 
 
-          link:css
-          &lt;link rel="stylesheet" href="style.css"&gt;
+                    link:css
+                    &lt;link rel="stylesheet" href="style.css"&gt;
 
-        </pre>
-      </article>
-
-
-      <article>
-        <h2>ID and CLASS</h2>
-        <h3>Symbole: # or .</h3>
-        <pre>
-          #nav
-          &lt;div id="nav"&gt;&lt;/div&gt;
+                  </pre>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </article>
 
 
-          .class
-          &lt;div class="class"&gt;&lt;/div&gt;
+        <article>
+          <ul class="accordion" data-accordion data-multi-expand="true">
+            <li class="accordion-item" data-accordion-active>
+              <a href="#" class="accordion-title">ID and CLASS</a>
+                <div class="accordion-content" data-tab-content>
+                  <h3>Symbole: # or .</h3>
+                  <pre>
+                    #nav
+                    &lt;div id="nav"&gt;&lt;/div&gt;
 
 
-          header.fisrt#search
-          &lt;header class="fisrt" id="search"&gt;&lt;/header&gt;
-        </pre>
-      </article>
+                    .class
+                    &lt;div class="class"&gt;&lt;/div&gt;
 
 
-      <article>
-        <h2>Climb-up</h2>
-        <h3>Symbole: ^</h3>
-        <pre>
-          div&gt;nav&gt;ul&gt;li^^p
+                    header.fisrt#search
+                    &lt;header class="fisrt" id="search"&gt;&lt;/header&gt;
+                  </pre>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="small-12 medium-6 column">
+        <article>
+          <ul class="accordion" data-accordion data-multi-expand="true">
+            <li class="accordion-item" data-accordion-active>
+              <a href="#" class="accordion-title">Html</a>
+                <div class="accordion-content" data-tab-content>
+                  <h3>Symbole: ^</h3>
+                  <pre>
+                    div&gt;nav&gt;ul&gt;li^^p
 
 
-          &lt;div&gt;
-            &lt;nav&gt;
-              &lt;ul&gt;
-                &lt;li&gt;
-              &lt;ul&gt;
-            &lt;nav&gt;
-            &lt;p&gt;
-          &lt;/div&gt;
-        </pre>
-      </article>
+                    &lt;div&gt;
+                      &lt;nav&gt;
+                        &lt;ul&gt;
+                          &lt;li&gt;
+                        &lt;ul&gt;
+                      &lt;nav&gt;
+                      &lt;p&gt;
+                    &lt;/div&gt;
+                  </pre>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </article>
 
 
-      <article>
-        <h2>Sibling</h2>
-        <h3>Symbole: +</h3>
-        <pre>
-          div+div+div
+        <article>
+          <ul class="accordion" data-accordion data-multi-expand="true">
+            <li class="accordion-item" data-accordion-active>
+              <a href="#" class="accordion-title">Sibling</a>
+                <div class="accordion-content" data-tab-content>
+                  <h3>Symbole: +</h3>
+                  <pre>
+                    div+div+div
 
 
-          &lt;div&gt;&lt;/div&gt;
-          &lt;div&gt;&lt;/div&gt;
-          &lt;div&gt;&lt;/div&gt;
-        </pre>
-      </article>
-      <article>
-        <h2>CSS</h2>
-        <h3>Symbole:</h3>
-        <pre>
-          m:a
-          margin: auto;
+                    &lt;div&gt;&lt;/div&gt;
+                    &lt;div&gt;&lt;/div&gt;
+                    &lt;div&gt;&lt;/div&gt;
+                  </pre>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </article>
 
 
-          pos:r
-          position: relative;
-
-          bgc
-          background-color: #fff;
-        </pre>
-      </article>
-      <article>
-        <h2>Text</h2>
-        <h3>Symbole: {}</h3>
-        <pre>
-          p{text to put}
-
-          &lt;p&gt;text to put&lt;/p&gt;
+        <article>
+          <ul class="accordion" data-accordion data-multi-expand="true">
+            <li class="accordion-item" data-accordion-active>
+              <a href="#" class="accordion-title">CSS</a>
+                <div class="accordion-content" data-tab-content>
+                  <h3>Symbole:</h3>
+                  <pre>
+                    m:a
+                    margin: auto;
 
 
-          a{link to website}
+                    pos:r
+                    position: relative;
 
-          &lt;a href=""&gt;link to website&lt;/a&gt;
-        </pre>
-      </article>
+                    bgc
+                    background-color: #fff;
+                  </pre>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </article>
+
+
+        <article>
+          <ul class="accordion" data-accordion data-multi-expand="true">
+            <li class="accordion-item" data-accordion-active>
+              <a href="#" class="accordion-title">Text</a>
+                <div class="accordion-content" data-tab-content>
+                  <h3>Symbole: {}</h3>
+                  <pre>
+                    p{text to put}
+
+                    &lt;p&gt;text to put&lt;/p&gt;
+
+
+                    a{link to website}
+
+                    &lt;a href=""&gt;link to website&lt;/a&gt;
+                  </pre>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </article>
+      </div>
       <!--  -->
     </section>
   <!--section  -->
@@ -174,6 +237,8 @@
   <!--footer  -->
     <footer>
       <!--  -->
+      <h2>Author</h2>
+      <p>Dehondt Matthieu</p>
 
       <!--  -->
     </footer>
